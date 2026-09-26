@@ -1,0 +1,15 @@
+import random
+number = random.randint(1,100)
+guess = 0
+attempts = 0
+while True:
+	guess = int(input("Guess the Number :"))
+	attempts +=1
+	if guess == number:
+		print(" Congratulations  ! You have guess the Correct Number. ")
+		break
+	elif guess > number:
+		print("Too High. Guess again!")
+	else:
+		print("Too Low.  Guess again!")
+	print("Attemts-", attempts)
